@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--grisClaro);
+}
+
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+
+}
+
+html {
+    font-family: 'Roboto' , sans-serif;
+}
+
+ /* HEADER  */
+
+header {
+    border: 3px solid green;
+    background-color: var(--amarillo);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    border: 3px solid red;
+}
+
+.menu-container {
+    border: 3px solid red;
+    display: none;
+}
+
+.burger-container {
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-bar {
+    border: 3px solid gray;
+    display: flex;
+}
+.card-container {
+    border: 3px solid gray;
+}
+
+.logo {
+    border: 3px solid pink;
+}
+
+.search-button-container {
+    border: 3px solid pink;
+}
+
+.search-container {
+    border: 3px solid brown;
+}
+
+
+/* Fin del Heder */
+
