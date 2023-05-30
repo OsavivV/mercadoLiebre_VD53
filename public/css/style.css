@@ -42,13 +42,10 @@ header {
     flex-direction: column;
 }
 
-.card-container {
-    
-}
 
 .menu-container {
     padding: 0px;
-    display: undefine;
+    display: none;
     
 }
 
@@ -66,34 +63,19 @@ header {
     height: 19px;
     border-radius: 5px;
     text-align: center;
-    box-sizing: border-box;
      
 }
 
 .logo-bar {
-    
     display: flex;
-}
-.card-container {
-    
-}
-
-.logo {
-    
-}
-
-.search-button-container {
-    
-}
-
-.search-container {
-   
+    flex-wrap: wrap;
 }
 
 /*  Main */
 
 main{
     width: 90%;
+
 
 }
 
@@ -103,11 +85,15 @@ main{
     font-size: 24px;
 }
 
+.ListOffers, .ListLastView{
+    margin-bottom: 10px;
+}
+
 .price{
     font-size: 18px;
 }
 
-.discounts .description {
+.discounts, .description {
     font-size: 16px;
 }
 
@@ -123,4 +109,11 @@ main{
 footer{
     text-align: center;
 
+}
+
+footer .fa-solid{
+    color: var(--celeste);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    
 }
