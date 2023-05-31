@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/loginRegister.css" rel="stylesheet">
-    <link href="/css/colors.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/colors.css" rel="stylesheet">
+    <link href="/css/mediaQueryStyle.css" rel="stylesheet">
+    <link href="/css/loginRegister.css" rel="stylesheet">
     <title>Login </title>
 
 </head>
@@ -32,6 +33,28 @@
              </h2>
         </div>
     </div>
+
+    <nav class="menu-container">
+        <ul>
+            <li>Ofertas</li>
+            <li>Tienda Oficiales</li>
+            <li>Vender</li>
+            <li class="berma">Ayuda</li>
+        </ul>
+        <ul>
+            <li> <a href="/register"> Crea tu cuenta <i class="fas fa-id-card"></i> </a> </li>
+            <li> <a href="/login"> ingresa <i class="fas fa-sign-in-alt"></i> </a> </li>
+            <li> Mis compras <i class="fas fa-shopping-basket"></i></li>
+        </ul>
+    </nav>
+
+    <div class="burger-container">
+        <div class="burger-menu">
+            <i class="fas fa-bars"> </i>
+        </div>
+    </div>
+
+
 </header>
 <body>
 
@@ -39,21 +62,24 @@
 
         <form action="/login" method="GET">
 
+            <h1>Iniciar Sesion </h1> <br>
+
             <label>Correo Electronico:</label>
-                <input type="text" name="email"><br>
+                <input class="formList" type="email" name="email" placeholder="Correo Electronico:" minlength="5" require> <br>
+                    <div id="text-Danger"> * Por favor, ingrese un Correo Electronico valido. </div> <br>
 
             <label>Contraseña: </label>
-                <input type="password" name="password"><br>
+                <input class="formList" type="password" name="password" placeholder="Contraseña:" minlength="6" require> <br>
+                    <div id="text-Danger"> * El campo contrasenia no puede estar vacio . </div> <br>
 
-            <input type="submit" value="Enviar">
+            <input class="buttonSub" type="submit" value="Enviar">
             
 
         </form>
 
         <div class="middleScreen" >
             
-            <h1>Iniciar Sesion </h1>
-                <a href="/"> <img src="/images/logo-mercado-liebre.svg" alt="logo"></a>
+                <a href="/"> <img id="middleScreen" src="/images/img-home-banner.jpg" alt="logo"></a>
 
         </div>
 

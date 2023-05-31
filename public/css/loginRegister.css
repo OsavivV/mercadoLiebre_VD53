@@ -53,7 +53,26 @@ form {
 .middleScreen {
     background-color: var(--amarillo);
     text-align: center;
+    width: 70%;
 }
+
+#middleScreen{
+    height: 100%;
+    width: 100%;
+}
+
+.buttonSub{
+    width: 50%;
+    color: var(--grisOscuro);
+    background-color: var(--amarillo);
+    border: none;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 5px;
+}
+
+.buttonSub:hover {
+    background-color: #0022AA;
+  }
 
 
 footer{
@@ -66,4 +85,13 @@ footer .fa-solid{
     font-size: 2rem;
     margin-bottom: 10px;
     
+}
+
+footer .fa-solid{
+    color: var(--amarillo);
+}
+
+
+#text-Danger{
+    color: var(--rojo);
 }
