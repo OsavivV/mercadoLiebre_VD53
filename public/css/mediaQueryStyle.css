@@ -1,14 +1,130 @@
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 361px) {
 
+    .menu-container {
+        display: block;
+    }
+
+    .burger-container {
+        display: none
+    }
+
+    .mainBanner{
+        height: 150px;
+    }
+
+    .ListOffers, .ListLastView {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .pricesDiscounts{
+        display: flex;
+    }
+
+    .price{
+        flex-grow: 0.30;
+        
+    }
+    
+    .discounts{
+        flex-grow: 0.70;
+    }
+
+    .fa-truck{
+        position: relative;
+        right: -100px;
+        top: -25px;
+    }
+    
+    .ViewsProducts{
+        display: flex;
+        
+    }
+
+    .ListLastView, .ListOffers{
+        width: 100%;
+        flex: 0 0 42%;
+    }
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 470px) {
 
+    .fa-truck{
+        right: -150px;
+    }
+
+    .ListLastView, .ListOffers{
+        flex: 0 0 44%;
+    }
+}
+
+@media (min-width: 620px) {
+
+    .logo-container {
+        flex-direction: row;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-container ul{
+        display: contents;
+    }
+
+    .fa-truck{
+        right: -220px;
+    }
+
+    .ListLastView, .ListOffers{
+        flex: 0 0 45%;
+    }
+}
+    
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .fa-truck{
+        right: -100px;
+    }
+
+    .ListLastView, .ListOffers{
+        flex: 0 0 21.3%;
+    }
 }
 
 /* TV hasta 1366 */
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
 
+    .logo-container{
+        justify-content: space-around
+    }
+
+    .berma{
+        margin-right: 280px;
+    }
+
+    .mainBanner {
+        height: 200px;
+    }
+
+    .fa-truck{
+        right: -180px;
+    }
+
+    .ListLastView, .ListOffers{
+        flex: 0 0 22.3%;
+    }
+
+    .footerContainer{
+        display: flex;
+        margin: 15px;
+        margin-bottom: 50px;
+        font-size: 18px;
+    }
+
+    
 }
