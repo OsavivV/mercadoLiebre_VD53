@@ -113,9 +113,7 @@ header {
 
 /*  Main */
 
-img:hover{
-    box-shadow: 0 2px 8px 0 gray;
-}
+
 
 .Headlines{
     width: 100%;
@@ -130,43 +128,65 @@ img:hover{
 }
 
 
+.ListOffers:hover, .ListLastView:hover{
+    box-shadow: 0 5px 8px 0 gray;
+}
+
 
 .productsDetails{
-    border-top: 1px solid #ebebeb;
-    margin-left: 10px;
+    border-top: 1px solid;
+    color: var(--verde);
+    padding: 0;
+    background-color: var(--blanco);
+    margin-bottom: 10px;
+    position: relative;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .fa-truck{
-    color: var(--verde);
-    border: 1px solid var(--verde);
-    text-align: center;
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
-    background-color: #FFF;
+    border: 1px solid var(--verde);
+    background-color: var(--blanco);
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
   
 }
 
 .fa-truck:hover{
-    transform: rotate(90deg);
+    transform: rotate(360deg);
     transition: 1s;
 }
 
 .ListOffers .fa-truck:hover{
-    transform: rotate(90deg);
+    transform: rotate(360deg);
     transition: 1s;
 }
 
 .price{
-    font-size: 18px;
+    font-size: 14px;
+    color: var(--negro);
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
     
 }
 
 .discounts{
     color: var(--verde);
-    font-size: 16px;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 

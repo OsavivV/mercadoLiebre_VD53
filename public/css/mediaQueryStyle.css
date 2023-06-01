@@ -29,34 +29,19 @@
     .discounts{
         flex-grow: 0.70;
     }
-
-    .fa-truck{
-        position: relative;
-        right: -100px;
-        top: -25px;
-    }
     
     .ViewsProducts{
         display: flex;
+        flex-wrap: wrap;
         
     }
 
     .ListLastView, .ListOffers{
         width: 100%;
-        flex: 0 0 42%;
+        flex: 0 0 90%;
     }
 }
 
-@media (min-width: 470px) {
-
-    .fa-truck{
-        right: -150px;
-    }
-
-    .ListLastView, .ListOffers{
-        flex: 0 0 44%;
-    }
-}
 
 @media (min-width: 620px) {
 
@@ -74,26 +59,30 @@
         display: contents;
     }
 
-    .fa-truck{
-        right: -220px;
-    }
 
     .ListLastView, .ListOffers{
         flex: 0 0 45%;
     }
+
+    
 }
     
 
 /* Desktop */
 @media (min-width: 769px) {
 
-    .fa-truck{
-        right: -100px;
+    .productsDetails{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
     }
 
     .ListLastView, .ListOffers{
-        flex: 0 0 21.3%;
+        flex: 0 0 21%;
     }
+
+    
 }
 
 /* TV hasta 1366 */
@@ -111,13 +100,6 @@
         height: 200px;
     }
 
-    .fa-truck{
-        right: -180px;
-    }
-
-    .ListLastView, .ListOffers{
-        flex: 0 0 22.3%;
-    }
 
     .footerContainer{
         display: flex;
@@ -126,5 +108,8 @@
         font-size: 18px;
     }
 
+    .ListLastView, .ListOffers{
+        flex: 0 0 22%;
+    }
     
 }
